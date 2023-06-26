@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
+
+body {
+  font-family: "Varela", sans-serif;
+  background-image: url("https://wallpaperaccess.com/full/766858.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  padding: 30px;
+  background: linear-gradient(90deg, rgb(50, 50, 245), rgb(255, 0, 221) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.todo {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  font-size: 22px;
+  font-weight: 600;
+  justify-content: space-between;
+  background: linear-gradient(90deg, rgb(50, 50, 245), rgb(255, 0, 221) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  margin: 10px 0;
+  background: transparent !important;
+  backdrop-filter: brightness(60%);
+  border-color: #ccc !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 32px;
+  background: linear-gradient(90deg, rgb(50, 50, 245), rgb(255, 0, 221) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add-btn {
+  margin: 10px 0 !important;
+  max-width: 100px;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(50, 50, 245), rgb(255, 0, 221) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75) !important;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75) !important;
 }
